@@ -1,0 +1,16 @@
+{
+  "name": "economic",
+  "version": "1.0.0",
+  "description": "A web app to fetch data from economic api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hitesh Baldaniya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "node-fetch": "^1.6.1"
+  }
+}

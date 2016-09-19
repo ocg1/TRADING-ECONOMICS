@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <div id="posters-wrapper" class="content-padding clearfix">
+	<h1><%= title %></h1>
+	<table class="table table-bordered table-inverse">
+	  <thead>
+		<tr>
+		  <th>Sr No</th>
+			<th>Name</th>
+			<th>Country</th>
+			<th>Date</th>
+			<th>Last</th>
+			<th>Group</th>
+			<th>URL</th>
+			<th>Symbol</th>
+			<th>Importance</th>
+			<th>DailyChange</th>
+			<th>DailyPercentualChange</th>
+			<th>WeeklyChange</th>
+			<th>WeeklyPercentualChange</th>
+			<th>MonthlyChange</th>
+			<th>MonthlyPercentualChange</th>
+			<th>YearlyChange</th>
+			<th>YearlyPercentualChange</th>
+			<th>YTDChange</th>
+			<th>YTDPercentualChange</th>
+			<th>yesterday</th>
+			<th>lastWeek</th>
+			<th>lastMonth</th>
+			<th>lastYear</th>
+			<th>startYear</th>
+			<th>LastUpdate</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<% for (var i = 0; i < data.length; i++){ %>
+		<tr>
+		  <th scope="row"><%= i+1 %></th>
+			<td><%= data[i].Name %></td>
+			<td><%= data[i].Country %></td>
+			<td><%= data[i].Date %></td>
+			<td><%= data[i].Last %></td>
+			<td><%= data[i].Group %></td>
+			<td><%= data[i].URL %></td>
+			<td><%= data[i].Symbol %></td>
+			<td><%= data[i].Importance %></td>
+			<td><%= data[i].DailyChange %></td>
+			<td><%= data[i].DailyPercentualChange %></td>
+			<td><%= data[i].WeeklyChange %></td>
+			<td><%= data[i].WeeklyPercentualChange %></td>
+			<td><%= data[i].MonthlyChange %></td>
+			<td><%= data[i].MonthlyPercentualChange %></td>
+			<td><%= data[i].YearlyChange %></td>
+			<td><%= data[i].YearlyPercentualChange %></td>
+			<td><%= data[i].YTDChange %></td>
+			<td><%= data[i].YTDPercentualChange %></td>
+			<td><%= data[i].yesterday %></td>
+			<td><%= data[i].lastWeek %></td>
+			<td><%= data[i].lastMonth %></td>
+			<td><%= data[i].lastYear %></td>
+			<td><%= data[i].startYear %></td>
+			<td><%= data[i].LastUpdate %></td>
+		<% } %>
+		</tr>
+	  </tbody>
+	</table>
+    </div>
+    <% include partials/script.ejs %>
+  </body>
+</html>
